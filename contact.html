@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="Style.css" rel="stylesheet" media="screen" />
+        <link href="StyleMob.css" rel="stylesheet" media='screen and (max-device-width: 480px)' />
+</head>
+<header>
+        <div class="topnav">
+                <a  href="index.html">Home Page</a>
+                <a href="about.html">About</a>
+                <a  class="active" href="contact.html">Contact</a>
+              </div> 
+</header>
+<body class="main">
+        <div id="postCard" class="form-container"  style="margin-top:5%;">
+                <div class="form-Style message-form">
+                        <strong>Username:</strong><br>
+                        <input type="text" name="Username">
+                        <br><br>
+                        <strong>Email:</strong><br>
+                        <input type="text" name="Email">
+                        <br><br>
+                        <strong>Message Title:</strong><br>
+                        <input type="text" name="Title">
+                        <input style="margin-top:1%; height:30%" type="text" name="Message">
+                        <br><br>
+                        <input type="submit" value="Submit">
+                        <p style="font-size:100%;color:#413C40;margin-bottom:0px;">You want to set a date for a metting?</p>
+                        <p style="color:#7C6F76;font-size:60%; margin-bottom:1%;">After setting the date we are going to get in contact with you to make the date official.</p>
+                                <input class="textbox" id="selctedDay" placeholder="Day" name="day">
+                                <select class="text-form dropdown-forms" id = "Month">
+                                <option value = "Select Month">Select Month</option>
+                                <option value = "January">January</option>
+                                <option value = "February">February</option>
+                                <option value = "March">March</option>
+                                <option value = "April">April</option>
+                                <option value = "May">May</option>
+                                <option value = "June">June</option>
+                                <option value = "July">July</option>
+                                <option value = "August">August</option>
+                                <option value = "September">September</option>
+                                <option value = "Octomber">Octomber</option>
+                                <option value = "November">November</option>
+                                <option value = "December">December</option>
+                                </select>
+                                <select  class="text-form dropdown-forms" id = "Year">
+                                        <option value = "Select Year">Select Year</option>
+                                        <option value = "2018">2018</option>
+                                        <option value = "2019">2019</option>
+                                </select>
+                                <input type="submit" value="Submit">
+                        </div> 
+                      <div class="info">
+                              <div style="padding:5%;color:#7C6F76;">
+                                <p><strong>You can also find us:</strong></p>
+                                <p style="font-size:120%;">@JdPhotography</p>
+                                <p style="font-size:120%;">The address 17, at the street</p>
+                                <p><strong style="font-size:120%;">Monday-Friday:</strong>8:00am-7:00pm</p>
+                                <p><strong style="font-size:120%;">Saturday:</strong>8:00am-1:00pm</p>
+                        </div>
+                        </div>
+
+        </div>
+</body>
+</html>
