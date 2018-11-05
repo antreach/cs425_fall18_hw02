@@ -3,6 +3,15 @@
 <head>
     <link href="Style.css" rel="stylesheet" media="screen" />
     <link href="StyleMob.css" rel="stylesheet" media='screen and (max-device-width: 480px)' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="shortcut icon" type="favicon.png" href="favicon.png"/>
+     <link rel="shortcut icon" type="favicon.png" href="http://example.com/favicon.png"/>
+     <meta charset=“utf-8”> 
+     <meta name="description" content="JDPhotography website">
+        <meta name="keywords" content="art,photography,photographer">
+        <meta name="author" content="Antrea Chrysanthou">
+
+     <title>John Doe</title>
 </head>
 <header>
         <div class="topnav">
@@ -12,20 +21,36 @@
               </div> 
 </header>
 <body class="main">
+        <button onclick=" document.body.scrollTop = 0; document.documentElement.scrollTop = 0;" id="myBtn" title="Go to top" class="upButton"><i class=" goUp fas fa-sort-up"></i></button>
+        <script>
+                window.onscroll = function () { scrollFunction() };
+                function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                document.getElementById("myBtn").style.display = "block";
+                        } else {
+                                document.getElementById("myBtn").style.display = "none";
+                        }
+                }
+        </script>
         <div id="photographerBio" class="form-container">
                 <img src="photographer.jpg" class="photographer-style" alt="Avatar">
             <div class="photographer-bio">
-                <p ><strong>Hi I am John Doe, photographer.</strong>Thank you for taking a little time to watch my art.
-                I find myself becoming more and more jaded with the photographic landscape of today. 
+                <p ><strong>Hi I am John Doe, photographer.</strong> Thank you for taking a little time to preview my art.
+                I find myself becoming more and more jaded with the photographic landscapes of today. 
                 I never want to be someone who takes predictable, boring photographs. To combat this, 
                 I ask myself after every photo: is this good enough for a gallery, a museum, a photo book? If so, I’m happy.
-                I’m always looking to create timeless images; classic photographs. I made a solo gallery and cooporated with different of photographers the last 7 years.
-                I like to make every situation more artistic, so everyone who sees the photos would think that it was taken out of a movie. If you are interested in a colaboration
-                or a photoshoot or just want to hang around in these magical experience go to the contact section and send us a message. 
+                I’m always looking to create timeless images; classic photographs. I made a solo gallery and cooporated with different photographers in the past 7 years.
+                I like to make every situation more artistic, so anyone who sees the photos would think that they were taken out of a movie. If you are interested in a colaboration
+                or a photoshoot or just want to hang around in these magical experiences go to the contact section and send me a message. 
                 </p>
-                <p>Thank you,I hope to colaborate with you soon. </p>
+                <p>Thank you, I hope to colaborate with you soon. </p>
             </div>
             </div> 
         </div>
 </body>
+<footer>
+    <a class="footer-style" href="https://www.instagram.com/" target="_blank"><i class="footer-icon fab fa-instagram"></i></a>
+    <a class="footer-style" href="https://twitter.com/?lang=en" target="_blank"><i class="footer-icon fab fa-twitter-square"></i></a>
+    <a class="footer-style" href="https://www.facebook.com/" target="_blank"><i class="footer-icon fab fa-facebook-square"></i></a>
+</footer>
 </html>

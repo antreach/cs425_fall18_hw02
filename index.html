@@ -3,6 +3,15 @@
 <head>
      <link href="Style.css" rel="stylesheet" media="screen" />
      <link href="StyleMob.css" rel="stylesheet" media='screen and (max-device-width: 480px)' />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+     <link rel="shortcut icon" type="favicon.png" href="favicon.png"/>
+     <link rel="shortcut icon" type="favicon.png" href="http://example.com/favicon.png"/>
+     <meta charset=“utf-8”> 
+     <meta name="description" content="JDPhotography website">
+                <meta name="keywords" content="art,photography,photographer">
+                <meta name="author" content="Antrea Chrysanthou">
+
+     <title>JDPhotography</title>
 </head>
 
 <header>
@@ -13,6 +22,17 @@
               </div> 
 </header>
 <body class="main">
+                <button onclick=" document.body.scrollTop = 0; document.documentElement.scrollTop = 0;" id="myBtn" title="Go to top" class="upButton"><i class=" goUp fas fa-sort-up"></i></button>
+        <script>
+                window.onscroll = function () { scrollFunction() };
+                function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                document.getElementById("myBtn").style.display = "block";
+                        } else {
+                                document.getElementById("myBtn").style.display = "none";
+                        }
+                }
+        </script>
         <div class="container">
                 <img src="banner-photo.jpg" alt="Camera" class="image_Style">
                 <div class="text-block">
@@ -24,7 +44,7 @@
                 <div style="color:#7C6F76;">
                         <p><strong>Our mission</strong> is to provide outstanding service, an enjoyable experience in front of the camera as well as photographs you will love.</p>
                         <p>We are all passionated photographers that want to relive experiences by looking the photographs we took and help you feel what we felt.</p>
-                        <p>Live what we lived.</p>
+                        <p>Live what we lived.</p> 
                 </div>
         </div>
         <div class="normal-text">
@@ -57,4 +77,9 @@
         <br>
         </div>
 </body>
+<footer>
+        <a class="footer-style" href="https://www.instagram.com/" target="_blank"><i class="footer-icon fab fa-instagram"></i></a>
+        <a class="footer-style" href="https://twitter.com/?lang=en" target="_blank"><i class="footer-icon fab fa-twitter-square"></i></a>
+        <a class="footer-style" href="https://www.facebook.com/" target="_blank"><i class="footer-icon fab fa-facebook-square"></i></a>
+    </footer>
 </html>

@@ -9,6 +9,7 @@ body{
 
 /*Nav Style*/
 .topnav {
+    z-index: 1;
     background-color:white;
     overflow: hidden;
     position:fixed!important;
@@ -207,4 +208,23 @@ select option:active{
    text-align:center;
    padding-left:30%;
    padding-right:30%;
+}
+/*footer*/
+.footer-icon{
+    color:#7C6F76;
+    font-size:150%;
+    margin-right:0.5%;
+}
+.footer-icon:hover{
+    color:#413C40;
+}
+
+.footer-style{
+    color:#7C6F76;
+}
+footer{
+    margin-left:85%;
+    margin-top:8%;
+    margin-bottom:5%;
+    margin-right:5%;
 }

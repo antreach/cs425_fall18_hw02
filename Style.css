@@ -9,6 +9,7 @@ body{
 
 /*Nav Style*/
 .topnav {
+    z-index: 1;
     background-color:white;
     overflow: hidden;
     position:fixed!important;
@@ -201,4 +202,45 @@ select option:active{
    text-align:center;
    padding-left:30%;
    padding-right:30%;
+}
+/*footer*/
+.footer-icon{
+    color:#7C6F76;
+    font-size:150%;
+    margin-right:0.5%;
+}
+.footer-icon:hover{
+    color:#413C40;
+}
+
+.footer-style{
+    color:#7C6F76;
+}
+footer{
+    margin-left:90%;
+    margin-top:8%;
+    margin-bottom:5%;
+    margin-right:5%;
+}
+/*button*/
+.goUp{
+    color:white;
+    font-size:250%;
+}
+
+.upButton{
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    background-color:#7C6F76;
+    cursor:pointer;
+    padding:0.5%;
+    border-radius:5px;
+}
+
+.upButton:hover{
+    background-color:#413C40;
 }
